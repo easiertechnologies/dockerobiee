@@ -26,18 +26,18 @@ echo "starting OBIEE"
 
 docker start obiee
 
-getObieeStatus() {
-	obstatus=$(docker logs obiee | grep "RUNNING")
-}
+# getObieeStatus() {
+# 	obstatus=$(docker logs obiee | grep "bi_server1      Server          6da9a34b9f14              unknown     unknown      RUNNING")
+# }
 
-getObieeStatus
+# getObieeStatus
 
-until [ "$obstatus" == "RUNNING" ]
-do
-	sleep 60
-	docker logs obiee
-	getObieeStatus
-done
+# until [ "$obstatus" == "RUNNING" ]
+# do
+# 	sleep 60
+# 	docker logs obiee
+# 	getObieeStatus
+# done
 
 obport=$(docker port obiee | grep "9502" | cut -d: -f2)
 
