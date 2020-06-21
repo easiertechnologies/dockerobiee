@@ -9,7 +9,7 @@ These scripts spin up 2 contianers.
 
 ## Usage
 
-1. Have Docker installed (this should exist by default on GCP)
+1. Have Docker installed (this should exist by default on GCP, if `which docker` returns nothing then run `apt update ** apt install -y docker.io`
 1. `sudo su`
 1. `cd /`
 1. `git clone https://github.com/easiertechnologies/dockerobiee`
