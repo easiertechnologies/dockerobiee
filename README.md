@@ -15,4 +15,4 @@ These scripts spin up 2 contianers.
 1. `git clone https://github.com/easiertechnologies/dockerobiee`
 1. `cd dockerobiee`
 1. `chmod 755 startobiee.sh`
-1. `sudo ./startobiee.sh`
+1. `./startobiee.sh`
