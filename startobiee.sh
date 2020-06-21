@@ -11,7 +11,7 @@ echo "##############################################################"
 echo "Starting Database"
 echo "##############################################################"
 
-ip=$(/sbin/ifconfig ens4 | grep 'inet addr' | cut -d: -f2 | awk '{print $1}')
+ip=$(/sbin/ifconfig ens4 | grep 'inet' | cut -d: -f2 | awk '{print $2}')
 
 docker run -d -p 1521:1521 --stop-timeout 600 --name database mdaviscatg/oracle_database
 
