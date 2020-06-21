@@ -9,7 +9,9 @@ These scripts spin up 2 contianers.
 
 ## Usage
 
-1. Have Docker installed
+1. Have Docker installed (this should exist by default on GCP)
+1. `sudo su`
+1. `cd /`
 1. `git clone https://github.com/easiertechnologies/dockerobiee`
 1. `cd dockerobiee`
 1. `sudo ./startobiee.sh`
