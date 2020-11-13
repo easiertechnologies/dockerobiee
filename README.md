@@ -10,7 +10,7 @@ These scripts spin up 2 contianers.
 :warning: if you are not using Ubuntu 18.04 you will need to edit the `startobiee.sh` script to get the proper IP Adress of the local machine.  For example:
 
 - Ubuntu 16.04 $ip=(/sbin/ifconfig ens4 | grep 'inet addr' | cut -d: -f2 | awk '{print $1}')
-- Ubuntu 18.04 $ifp=(/sbin/ifconfig ens4 | grep 'inet' | cut -d: -f2 | awk '{print $2}')
+- Ubuntu 18.04 $ip=(/sbin/ifconfig ens4 | grep 'inet' | cut -d: -f2 | awk '{print $2}')
 
 
 ## Usage
